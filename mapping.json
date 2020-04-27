@@ -1,0 +1,18 @@
+{
+    "components": {
+      "Button": {
+        "meta": {},
+        "appearances": {
+          "filled": {
+            "variantGroups": {
+              "status": {
+                "primary": {
+                  "backgroundColor": "pink"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }

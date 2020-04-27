@@ -25,6 +25,7 @@ import {
 } from '@ui-kitten/components';
 import { EvaIconsPack } from '@ui-kitten/eva-icons';
 import * as eva from '@eva-design/eva';
+import { default as appMapping } from './mapping.json';
 
 /**
  * Use any valid `name` property from eva icons (e.g `github`, or `heart-outline`)
@@ -37,7 +38,7 @@ const HeartIcon = (props: ImageProps): React.ReactElement<ImageProps> => (
 export default (): React.ReactFragment => (
   <>
     <IconRegistry icons={EvaIconsPack}/>
-    <ApplicationProvider {...eva} theme={eva.light}>
+    <ApplicationProvider {...eva} theme={eva.light} customMapping={appMapping}>
       <Layout style={styles.container}>
         <Text style={styles.text} category='h1'>
           Welcome to UI Kitten 😻
